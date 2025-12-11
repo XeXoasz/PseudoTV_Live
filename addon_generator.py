@@ -28,8 +28,8 @@ import xml.etree.ElementTree
 from zipfile import ZipFile
 from shutil import copyfile, rmtree
 
-CHKPATH    = 'Z:/GitHub/addon-check/'
-GITPATH    = 'Z:/GitHub/PseudoTV_Live/'
+CHKPATH    = os.path.dirname(os.path.abspath(__file__))
+GITPATH    = os.path.dirname(os.path.abspath(__file__))
 ZIPPATH    = os.path.join(GITPATH,'zips','')
 DELETE_EXT = ('.pyc', '.pyo', '.db')
 DELETE_FOLDERS = ['__pycache__','.idea','Corel Auto-Preserve','venv']
@@ -43,8 +43,8 @@ else:
     def u(x):
         return x
         
-project_path = 'Z:/GitHub/PseudoTV_Live/plugin.video.pseudotv.live/resources/lib/'
-lang_file    = 'Z:/GitHub/PseudoTV_Live/plugin.video.pseudotv.live/resources/language/resource.language.en_gb/strings.po'
+project_path = os.path.join(GITPATH, 'plugin.video.pseudotv.live/resources/lib/')
+lang_file    = os.path.join(GITPATH, 'plugin.video.pseudotv.live/resources/language/resource.language.en_gb/strings.po')
 
 lang_ids = {}
 lang_ref = {}
