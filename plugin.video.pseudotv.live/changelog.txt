@@ -3,6 +3,7 @@ v.0.6.8-wizard
 - Tweaked "Paused" Channel rule to include local cache for remote instances. 
 - "Playback Timeout" setting added to Miscellaneous.
 - Refactored suspend throttling.
+- Fix incorrect duration display by converting milliseconds to seconds
 
 v.0.6.7-wizard
 - Introduced groundwork for Artificial Intelligence Integration (Currently Unavailable). 
@@ -400,4 +401,5 @@ v.0.4.1
 - Enhanced playback error detection.
 - Autotuned channels added to "Favorite" group.
 - Miscellaneous tweaks.
+
 - Fixed "library" content not respecting "specials" & "extras
